@@ -11,6 +11,7 @@ import SwiftUIPullToRefresh
 struct ExamplePullToRefreshView: View {
     @State private var isRefreshing = false
     @State private var array: [String] = []
+    
     var body: some View {
         NavigationView {
             List(array, id: \.self) { text in
